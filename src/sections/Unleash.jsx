@@ -105,12 +105,13 @@ const Container = styled.section`
 
   h2 {
     font-family: "cabinet-grotesk-bold";
-    font-size: 27px;
+    font-size: 4vw;
     margin: 1rem 0;
   }
   p {
     font-family: "cabinet-grotesk-light";
     color: ${colors.textLight};
+    font-size: 2vw;
   }
 
   .numbersContainer {
@@ -124,7 +125,7 @@ const Container = styled.section`
         text-align: center;
       }
       h1 {
-        font-size: 40px;
+        font-size: 5vw;
         font-family: "cabinet-grotesk-extra-bold";
         color: ${colors.primaryColor};
         span {
@@ -135,6 +136,8 @@ const Container = styled.section`
       p {
         margin-top: 0.7rem;
         font-family: "cabinet-grotesk-regular";
+        font-size: 2vw;
+
         color: #000;
       }
     }
@@ -143,6 +146,26 @@ const Container = styled.section`
     }
     .child3 {
       border-left: 1px solid #eaecf0;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .arrow5 {
+      position: absolute;
+      left: 0;
+      bottom: 5px;
+      height: 80px;
+      width: 100px;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .arrow5 {
+      display: none;
+    }
+    .numbersContainer {
+      .child {
+        padding: 0.3rem 1.5rem;
+      }
     }
   }
 `;

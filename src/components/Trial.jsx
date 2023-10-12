@@ -41,7 +41,7 @@ const Container = styled.div`
     padding: 0 6rem;
     p {
       color: #ffffff;
-      font-size: 21px;
+      font-size: 1.3vw;
       font-family: "cabinet-grotesk-regular";
     }
     button {
@@ -49,23 +49,25 @@ const Container = styled.div`
       border: none;
       outline: none;
       color: #ffffff;
-      width: 240px;
-      height: 50px;
-      font-size: 20px;
+      width: 20vw;
+      height: 4vw;
+      font-size: 1.7vw;
       font-family: "cabinet-grotesk-medium";
       border-radius: 30px;
       cursor: pointer;
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 7800px) {
     .content {
-      p {
+      padding: 0 2rem;
+
+      /* p {
         font-size: 15px;
       }
       button {
         font-size: 15px;
-      }
+      } */
     }
   }
 `;

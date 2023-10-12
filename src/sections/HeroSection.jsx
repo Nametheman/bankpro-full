@@ -146,6 +146,12 @@ const Hero = styled.section`
       width: 110px;
     }
   }
+  @media only screen and (max-width: 700px) {
+    .arrow1,
+    .scribble {
+      display: none;
+    }
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -310,6 +316,44 @@ const ContentContainer = styled.div`
       }
       .comingSoon {
         display: none;
+      }
+    }
+    .content {
+      padding: 0 0.5rem;
+      p {
+        font-size: 11px;
+      }
+      .heading {
+        h1 {
+          font-size: 30px;
+        }
+      }
+      .demoBtn,
+      .signUpBtn {
+        height: 35px;
+        width: 120px;
+        font-size: 14px;
+      }
+      .mockup {
+        width: 600px;
+      }
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .content {
+      .mockup {
+        width: 95vw;
+      }
+    }
+    .arrow1 {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .content {
+      p {
+        margin-top: 1rem;
+        font-size: 10px;
       }
     }
   }

@@ -68,7 +68,7 @@ const SectionWrapper = styled.section`
   }
   h2 {
     font-family: "cabinet-grotesk-extra-bold";
-    font-size: 35px;
+    font-size: 4vw;
 
     span {
       font-family: "cabinet-grotesk-extra-bold";
@@ -79,9 +79,15 @@ const SectionWrapper = styled.section`
     margin-top: 1rem;
     color: ${colors.textLight};
     font-family: "cabinet-grotesk-light";
-    font-size: 18px;
+    font-size: 2.4vw;
     span {
       font-family: "cabinet-grotesk-bold";
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .arrow3,
+    .arrow4 {
+      display: none;
     }
   }
 `;

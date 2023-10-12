@@ -41,7 +41,7 @@ const Container = styled.div`
     padding: 0 4rem;
 
     .icon {
-      width: 70px;
+      width: 3vw;
     }
 
     .middle {
@@ -52,18 +52,18 @@ const Container = styled.div`
       gap: 1rem;
       h2 {
         color: #ffffff;
-        /* font-size: 21px; */
         font-family: "cabinet-grotesk-bold";
+        font-size: 1.7vw;
       }
       button {
         background: #ff8200;
         border: none;
         outline: none;
         color: #ffffff;
-        width: 400px;
-        height: 50px;
+        width: 100%;
+        height: 5vh;
         margin: 0 auto;
-        font-size: 20px;
+        font-size: 1.7vw;
         font-family: "cabinet-grotesk-medium";
         border-radius: 30px;
         cursor: pointer;
@@ -71,19 +71,13 @@ const Container = styled.div`
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 550px) {
     .content {
-      .icon {
-        width: 50px;
-      }
+      width: 97%;
       .middle {
-        h2 {
-          font-size: 16px;
-        }
         button {
-          width: 300px;
-          height: 40px;
-          font-size: 14px;
+          width: 100%;
+          height: 20px;
         }
       }
     }

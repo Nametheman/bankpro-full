@@ -48,12 +48,12 @@ const Container = styled.div`
       width: 100%;
       .first {
         h2 {
-          margin-bottom: 20px;
+          font-size: 2.4vw;
           font-family: "cabinet-grotesk-bold";
         }
         p {
           color: #667085;
-          font-size: 14px;
+          font-size: 1.4vw;
         }
       }
       .second {
@@ -62,12 +62,13 @@ const Container = styled.div`
 
         .demoBtn {
           height: 44px;
-          width: 140px;
+          width: 12vw;
+
           border: 1px solid #c5c5c5;
           outline: none;
           background: #fff;
           font-family: "cabinet-grotesk-bold";
-          font-size: 17px;
+          font-size: 1.5vw;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -76,7 +77,23 @@ const Container = styled.div`
           cursor: pointer;
 
           img {
-            width: 17px;
+            width: 1.7vw;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 520px) {
+    .container {
+      padding: 0 2rem;
+      height: 100px;
+      .content {
+        flex-direction: column;
+        gap: 2vw;
+        .second {
+          .demoBtn {
+            width: 18vw;
+            height: 6vw;
           }
         }
       }

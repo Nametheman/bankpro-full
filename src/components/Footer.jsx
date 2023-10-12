@@ -159,6 +159,14 @@ const Wrapper = styled.footer`
       }
     }
   }
+  @media only screen and (max-width: 510px) {
+    .foot1 {
+      .secondSect {
+        flex-direction: column;
+        gap: 3rem;
+      }
+    }
+  }
   @media only screen and (max-width: 450px) {
     padding: 2rem 2rem;
 

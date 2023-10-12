@@ -134,4 +134,32 @@ const SectionWrapper = styled.section`
       align-items: center;
     }
   }
+  @media only screen and (max-width: 700px) {
+    .mainContentContainer {
+      .right {
+        img {
+          width: 90vw;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    padding: 0 1rem;
+
+    .mainContentContainer {
+      .left {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    .mainContentContainer {
+      .right {
+        img {
+          width: 90vw;
+          height: 350px;
+        }
+      }
+    }
+  }
 `;

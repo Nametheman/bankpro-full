@@ -206,6 +206,14 @@ const Container = styled.section`
     align-items: center;
     padding: 0 10rem;
   }
+  @media only screen and (max-width: 700px) {
+    padding: 0 3rem;
+    .right {
+      .listIcon {
+        width: 95vw;
+      }
+    }
+  }
 `;
 const Container2 = styled.section`
   margin: 4rem 10rem 0 4rem;
@@ -258,5 +266,21 @@ const Container2 = styled.section`
     margin-top: 3rem;
     align-items: center;
     padding: 0 10rem;
+  }
+  /* @media only screen and (max-width: 700px) {
+    .right {
+      img {
+        width: 80vw;
+      }
+    }
+  } */
+  @media only screen and (max-width: 700px) {
+    padding: 0 3rem;
+
+    .right {
+      .listIcon {
+        width: 95vw;
+      }
+    }
   }
 `;
