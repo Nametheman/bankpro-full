@@ -83,13 +83,23 @@ const Container = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 520px) {
+  @media only screen and (max-width: 780px) {
     .container {
       padding: 0 2rem;
       height: 100px;
       .content {
         flex-direction: column;
         gap: 2vw;
+        .first {
+          h2 {
+            font-size: 14px;
+            font-family: "cabinet-grotesk-bold";
+          }
+          p {
+            color: #667085;
+            font-size: 12px;
+          }
+        }
         .second {
           .demoBtn {
             width: 18vw;
