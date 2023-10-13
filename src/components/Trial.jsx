@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import trial from "../assets/images/trial.svg";
+import trial from "../assets/images/trial.png";
 
 const Trial = () => {
   return (
@@ -59,8 +59,12 @@ const Container = styled.div`
   }
 
   @media only screen and (max-width: 780px) {
+    img {
+      width: 90%;
+      height: 90px;
+    }
     .content {
-      padding: 0.1rem 1rem;
+      padding: 1rem 1rem;
       flex-direction: column;
       /* height: 200px; */
 

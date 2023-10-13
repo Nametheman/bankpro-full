@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import trial from "../assets/images/trial.svg";
+import trial from "../assets/images/trial.png";
 
 const Trial2 = () => {
   return (

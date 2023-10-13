@@ -37,9 +37,13 @@ const HeroSection = () => {
           <div className="nav1">
             <p className="logo">TM30 Bank Pro</p>
             <ul>
-              <li>Home</li>
-              <li className="disabled">Features</li>
-              <li className="disabled">Contact Us</li>
+              <a href="#">Home</a>
+              <a href="#features" className="disabled">
+                Features
+              </a>
+              <a href="#" className="disabled">
+                Contact Us
+              </a>
             </ul>
           </div>
           <button className="comingSoon">Get Started</button>
@@ -203,8 +207,10 @@ const ContentContainer = styled.div`
         font-family: "cabinet-grotesk-thin";
         font-size: 18px;
 
-        li {
+        a {
           cursor: pointer;
+          text-decoration: none;
+          color: #fff;
         }
       }
     }

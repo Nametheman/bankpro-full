@@ -39,10 +39,18 @@ const MobileNav = () => {
                 <CgClose onClick={toggleNavbar} />
               </div>
               <div className="menuLinks">
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">Contact us</a>
-                <button className="comingSoon">Get Started</button>
+                <a href="#" onClick={toggleNavbar}>
+                  Home
+                </a>
+                <a href="#features" onClick={toggleNavbar}>
+                  Features
+                </a>
+                <a href="#" onClick={toggleNavbar}>
+                  Contact us
+                </a>
+                <button className="comingSoon" onClick={toggleNavbar}>
+                  Get Started
+                </button>
               </div>
             </motion.div>
           </AnimatePresence>

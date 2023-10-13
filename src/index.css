@@ -57,3 +57,7 @@
   box-sizing: border-box;
   font-family: "cabinet-grotesk-regular";
 }
+
+html {
+  scroll-behavior: smooth;
+}

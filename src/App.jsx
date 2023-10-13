@@ -9,6 +9,7 @@ import StartTrial from "./components/StartTrial";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import MobileNav from "./components/MobileNa";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const workVariants = {
@@ -42,7 +43,9 @@ function App() {
         viewport={{ once: true, amount: 0.4 }}
       >
         <motion.div variants={workVariants}>
-          <EmpoweringSection />
+          <section id="features">
+            <EmpoweringSection />
+          </section>
         </motion.div>
       </motion.div>
       <motion.div
@@ -85,6 +88,7 @@ function App() {
           <Footer />
         </motion.div>
       </motion.div>
+      <ScrollToTop />
     </Wrapper>
   );
 }

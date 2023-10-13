@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import trial from "../assets/images/trial.svg";
+import trial from "../assets/images/trial.png";
 import discordLeft from "../assets/icon/discordLeft.svg";
 import discordRight from "../assets/icon/discordRight.svg";
 
@@ -72,6 +72,10 @@ const Container = styled.div`
   }
 
   @media only screen and (max-width: 780px) {
+    img {
+      width: 90%;
+      height: 80px;
+    }
     .content {
       width: 97%;
       .middle {
