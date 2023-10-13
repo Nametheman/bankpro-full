@@ -5,6 +5,11 @@ import playCirle from "../assets/icon/play-circle.png";
 import scribble from "../assets/images/scribble.png";
 import arrow1 from "../assets/images/arrow1.png";
 import { motion } from "framer-motion";
+import { CgMenuRightAlt } from "react-icons/cg";
+import { useState, useContext } from "react";
+// import state from "../state/state";
+// import { useSnapshot } from "valtio";
+import NavContext from "../state/NavContext";
 
 const HeroSection = () => {
   const workVariants = {
@@ -20,6 +25,11 @@ const HeroSection = () => {
       transition: { type: "spring", duration: 1.2, bounce: 0.3, delay: 0.4 },
     },
   };
+
+  // const snap = useSnapshot(state);
+  // console.log(snap.mobileNavOpened);
+
+  const { toggleNavbar } = useContext(NavContext);
   return (
     <Hero>
       <ContentContainer>
@@ -33,6 +43,9 @@ const HeroSection = () => {
             </ul>
           </div>
           <button className="comingSoon">Get Started</button>
+          <div className="mobileMenu">
+            <CgMenuRightAlt onClick={toggleNavbar} />
+          </div>
         </nav>
 
         <motion.div
@@ -52,13 +65,20 @@ const HeroSection = () => {
               className="scribble"
             />
           </motion.div>
-          <motion.p variants={workVariants}>
+          <motion.p variants={workVariants} className="desktopP">
             Bank Pro is a leading Internet banking service provider platform
             designed to revolutionize <br />
             the way you manage your finances. With a strong focus on user
             experience, security, <br />
             and cutting-edge technology, Bank Pro offers a comprehensive suite
             of digital banking <br />
+            solutions to meet the diverse needs of individuals and businesses.
+          </motion.p>
+          <motion.p variants={workVariants} className="mobileP">
+            Bank Pro is a leading Internet banking service provider platform
+            designed to revolutionize the way you manage your finances. With a
+            strong focus on user experience, security, and cutting-edge
+            technology, Bank Pro offers a comprehensive suite of digital banking
             solutions to meet the diverse needs of individuals and businesses.
           </motion.p>
           <motion.div variants={workVariants} className="comingSoon2">
@@ -162,6 +182,9 @@ const ContentContainer = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    .mobileMenu {
+      display: none;
+    }
     .nav1 {
       display: flex;
       align-items: center;
@@ -215,6 +238,9 @@ const ContentContainer = styled.div`
       font-family: "cabinet-grotesk-light";
       text-align: center;
       line-height: 1.4;
+    }
+    .mobileP {
+      display: none;
     }
     .heading {
       z-index: 2;
@@ -308,6 +334,14 @@ const ContentContainer = styled.div`
   }
   @media only screen and (max-width: 768px) {
     nav {
+      .mobileMenu {
+        display: block;
+        svg {
+          color: #ffffff;
+          font-size: 2rem;
+          cursor: pointer;
+        }
+      }
       .nav1 {
         gap: 9rem;
         ul {
@@ -350,10 +384,23 @@ const ContentContainer = styled.div`
     }
   }
   @media only screen and (max-width: 500px) {
+    nav {
+      height: 20px;
+      padding: 2.5rem 1.5rem;
+    }
     .content {
-      p {
+      .desktopP {
         margin-top: 1rem;
-        font-size: 10px;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: left;
+        display: none;
+      }
+      .mobileP {
+        display: block;
+        font-size: 14px;
+        margin-top: 1rem;
+        padding: 0 1.5rem;
       }
     }
   }

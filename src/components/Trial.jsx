@@ -58,14 +58,21 @@ const Container = styled.div`
     }
   }
 
-  @media only screen and (max-width: 7800px) {
+  @media only screen and (max-width: 780px) {
     .content {
-      padding: 0 2rem;
+      padding: 0.1rem 1rem;
+      flex-direction: column;
+      /* height: 200px; */
 
-      /* p {
-        font-size: 15px;
+      p {
+        font-size: 11px;
+        font-weight: bold;
       }
       button {
+        width: 20vw;
+        height: 30px;
+      }
+      /* button {
         font-size: 15px;
       } */
     }

@@ -71,13 +71,20 @@ const Container = styled.div`
     }
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 780px) {
     .content {
       width: 97%;
       .middle {
+        gap: 0.3rem;
+
         button {
-          width: 100%;
+          width: 70%;
           height: 20px;
+        }
+        h2 {
+          color: #ffffff;
+          font-family: "cabinet-grotesk-bold";
+          font-size: 12px;
         }
       }
     }

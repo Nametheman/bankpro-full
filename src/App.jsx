@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import Unleash from "./sections/Unleash";
 import StartTrial from "./components/StartTrial";
 import { motion } from "framer-motion";
+import styled from "styled-components";
+import MobileNav from "./components/MobileNa";
 
 function App() {
   const workVariants = {
@@ -20,8 +22,10 @@ function App() {
       transition: { type: "spring", duration: 1, bounce: 0.3, delay: 0.4 },
     },
   };
+
   return (
-    <>
+    <Wrapper>
+      <MobileNav />
       <HeroSection />
       <motion.div
         initial="offscreen"
@@ -81,8 +85,12 @@ function App() {
           <Footer />
         </motion.div>
       </motion.div>
-    </>
+    </Wrapper>
   );
 }
 
 export default App;
+
+const Wrapper = styled.main`
+  position: relative;
+`;

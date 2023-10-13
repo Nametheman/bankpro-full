@@ -11,10 +11,8 @@ const Unleash = () => {
   const [elementIsVisible, setElementIsVisible] = useState(false);
   const [isCounting, setIsCounting] = useState(false);
   useEffect(() => {
-    console.log("myRef", myRef.current);
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
-      console.log("entry", entry);
       setElementIsVisible(entry.isIntersecting);
     });
     if (elementIsVisible) {
