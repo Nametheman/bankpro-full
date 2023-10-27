@@ -11,8 +11,8 @@ const Explore = () => {
       <div className="content">
         <img src={discordLeft} alt="icon1" className="icon" />
         <div className="middle">
-          <h2>Are you interested in trying out any of our other products?</h2>
-          <button>Explore our other Amazing Products</button>
+          <h2>Talk to us today</h2>
+          <button>Request a demo</button>
         </div>
         <img src={discordRight} alt="icon1" className="icon" />
       </div>
@@ -60,7 +60,7 @@ const Container = styled.div`
         border: none;
         outline: none;
         color: #ffffff;
-        width: 100%;
+        width: 220px;
         height: 5vh;
         margin: 0 auto;
         font-size: 1.7vw;

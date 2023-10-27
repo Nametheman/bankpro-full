@@ -35,7 +35,7 @@ const HeroSection = () => {
       <ContentContainer>
         <nav>
           <div className="nav1">
-            <p className="logo">TM30 Bank Pro</p>
+            <p className="logo">BankPro</p>
             <ul>
               <a href="#">Home</a>
               <a href="#features" className="disabled">
@@ -70,20 +70,16 @@ const HeroSection = () => {
             />
           </motion.div>
           <motion.p variants={workVariants} className="desktopP">
-            Bank Pro is a leading Internet banking service provider platform
-            designed to revolutionize <br />
-            the way you manage your finances. With a strong focus on user
-            experience, security, <br />
-            and cutting-edge technology, Bank Pro offers a comprehensive suite
-            of digital banking <br />
-            solutions to meet the diverse needs of individuals and businesses.
+            BankPro is an enterprise grade mobile-first internet/mobile banking
+            platform <br /> that enables financial institutions to accelerate
+            time to market. It offers capabilities <br /> for omni-channel
+            experiences with highly customizable features.
           </motion.p>
           <motion.p variants={workVariants} className="mobileP">
-            Bank Pro is a leading Internet banking service provider platform
-            designed to revolutionize the way you manage your finances. With a
-            strong focus on user experience, security, and cutting-edge
-            technology, Bank Pro offers a comprehensive suite of digital banking
-            solutions to meet the diverse needs of individuals and businesses.
+            BankPro is an enterprise grade mobile-first internet/mobile banking
+            platform that enables financial institutions to accelerate time to
+            market. It offers capabilities for omni-channel experiences with
+            highly customizable features.
           </motion.p>
           <motion.div variants={workVariants} className="comingSoon2">
             <button className="demoBtn">

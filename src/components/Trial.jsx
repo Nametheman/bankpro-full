@@ -10,11 +10,11 @@ const Trial = () => {
         <p>
           With its user-centric approach, advanced technology, and personalized{" "}
           <br />
-          solutions, Bank Pro is transforming the digital banking experience for{" "}
+          solutions, BankPro is transforming the digital banking experience for{" "}
           <br />
           users worldwide.
         </p>
-        <button>Start your Trial now</button>
+        <button>Request a Demo</button>
       </div>
     </Container>
   );

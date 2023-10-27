@@ -8,11 +8,8 @@ const StartTrial = () => {
       <div className="container">
         <div className="content">
           <div className="first">
-            <h2>Start your Free trial now</h2>
-            <p>
-              Join over 20+ companies already growing with our Internet Banking
-              Platform.
-            </p>
+            <h2>See how it works</h2>
+            <p>Join the list of growing financial institutions on BankPro</p>
           </div>
           <div className="second">
             <button className="demoBtn">

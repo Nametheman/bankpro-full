@@ -16,32 +16,30 @@ const EmpoweringSection = () => {
         digital banking solutions.
       </h2>
       <p className="intro">
-        Bank Pro is committed to providing a comprehensive suite of features
-        that empower users to take <br /> control of their finances, achieve
-        their goals, and make smarter financial decisions.
+        Bank Pro comes with comprehensive suite of features that enhances your
+        interaction and <br /> enable you to offer needed differentiation in the
+        market-place.
       </p>
       <div className="mainContentContainer">
         <div className="left">
           <div className="dialog">
             <img src={personalized} alt="" />
-            <h4>Personalized Dashboard</h4>
+            <h4>Seamless Onboarding</h4>
             <p>
-              Bank Pro offers a personalized dashboard that allows users to
-              customize their homepage according to their preferences. Whether
-              it's quick access to account balances, recent transactions, or
-              favorite features, users can arrange their dashboard to suit their
-              unique banking needs.
+              Hassle-free and user-friendly onboarding process that gets you up
+              and running within a matter of days. With the right set of APIs
+              from your core banking platform, you will be all set to start
+              providing exceptional services to your customers, right from the
+              get-go.
             </p>
           </div>
           <div className="dialog">
             <img src={goal_based} alt="" />
-            <h4>Goal-based Savings</h4>
+            <h4>Embedded Digitial Services</h4>
             <p>
-              Bank Pro helps users achieve their financial goals with its
-              goal-based savings feature. Users can set specific targets, such
-              as saving for a vacation or a down payment, and track their
-              progress. The platform offers insights and recommendations to help
-              users stay on track and reach their goals faster.
+              BankPro come embedded with several digital services such as
+              airtime, data, cable TV, internet subscription etc. enabling
+              seamless purchases and bills payment for your customers.
             </p>
           </div>
           <div className="dialog">

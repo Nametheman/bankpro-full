@@ -28,11 +28,11 @@ const Features = () => {
         viewport={{ once: true, amount: 0.4 }}
       >
         <motion.h2 variants={workVariants}>
-          <span> Special Features of Bank Pro: </span>
-          Empowering <br /> Your Digital Banking Experience.
+          <span>Feature-rich BankPro:</span> Omni-channel experiences <br />{" "}
+          with highly customizable features
         </motion.h2>
         <motion.p variants={workVariants}>
-          There are several compelling reasons to choose <span>"Bank Pro"</span>{" "}
+          There are several compelling reasons to choose <span>"BankPro"</span>{" "}
           as your Internet <br /> banking service provider platform. Here are
           some key reasons:
         </motion.p>
@@ -53,7 +53,7 @@ const SectionWrapper = styled.section`
   .arrow3 {
     position: absolute;
     right: 0px;
-    top: 750px;
+    top: 700px;
   }
   .arrow4 {
     position: absolute;

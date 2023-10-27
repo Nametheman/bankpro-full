@@ -32,9 +32,8 @@ const Feature = () => {
               <img src={featured} alt="icon" className="featuredIcon" />
               <h2>Comprehensive Banking Services</h2>
               <p>
-                Bank Pro provides all the essential functionalities you need to
-                efficiently manage your finances in one platform. It offers a
-                comprehensive suite of banking services, including:
+                BankPro is designed to suit your banking needs and giving your
+                customers the needed flexibility and convenience:
               </p>
               <div className="lists">
                 <div className="list">
@@ -43,15 +42,27 @@ const Feature = () => {
                 </div>
                 <div className="list">
                   <img src={check} alt="icon" className="listIcon" />
-                  <p className="listItem">Transfer funds between accounts</p>
+                  <p className="listItem">Transfers</p>
                 </div>
                 <div className="list">
+                  <img src={check} alt="icon" className="listIcon" />
+                  <p className="listItem">Cards</p>
+                </div>
+                <div className="list">
+                  <img src={check} alt="icon" className="listIcon" />
+                  <p className="listItem">Digital Services</p>
+                </div>
+                <div className="list">
+                  <img src={check} alt="icon" className="listIcon" />
+                  <p className="listItem">Transactions and Statements</p>
+                </div>
+                {/* <div className="list">
                   <img src={check} alt="icon" className="listIcon" />
                   <p className="listItem">
                     Enabling you to manage your finances conveniently from your
                     computer or smartphone.
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="right">
@@ -60,7 +71,7 @@ const Feature = () => {
           </Container>
         </motion.div>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.4 }}
@@ -103,7 +114,7 @@ const Feature = () => {
             </div>
           </Container2>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         initial="offscreen"
@@ -116,28 +127,28 @@ const Feature = () => {
               <img src={featured} alt="icon" className="featuredIcon" />
               <h2>Integration with Third-Party Services</h2>
               <p>
-                Bank Pro seamlessly integrates with various third-party services
-                which allows you to connect make payments and manage your
-                accounts across multiple platforms, streamlining your financial
-                management process.
+                BankPro effortlessly integrates with a range of third-party
+                services, simplifying your financial management process and
+                enabling you to expand your service offerings for a distinctive
+                edge in the market
               </p>
               <div className="lists">
                 <div className="list">
                   <img src={check} alt="icon" className="listIcon" />
-                  <p className="listItem">
-                    Make Payment to Third-party services such as Bill Payment
-                  </p>
+                  <p className="listItem">Digital Onboarding</p>
+                </div>
+                <div className="list">
+                  <img src={check} alt="icon" className="listIcon" />
+                  <p className="listItem">Identity Verification</p>
+                </div>
+                <div className="list">
+                  <img src={check} alt="icon" className="listIcon" />
+                  <p className="listItem">Lending & Recovery Solution</p>
                 </div>
                 <div className="list">
                   <img src={check} alt="icon" className="listIcon" />
                   <p className="listItem">
-                    Purchases Services with ease within the platform.
-                  </p>
-                </div>
-                <div className="list">
-                  <img src={check} alt="icon" className="listIcon" />
-                  <p className="listItem">
-                    Bill payments, Investment tracking, and more.
+                    Bill Payments, Investment trackinjg, and more.
                   </p>
                 </div>
               </div>
