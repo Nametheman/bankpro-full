@@ -38,7 +38,7 @@ const Unleash = () => {
                   return { shouldRepeat: true, delay: 5 };
                 }
               }}
-              end={40}
+              end={200}
               duration={3}
             />
             +
@@ -55,16 +55,16 @@ const Unleash = () => {
                   return { shouldRepeat: true, delay: 5 };
                 }
               }}
-              end={600}
+              end={50}
               duration={3}
             />
-            %
+            k+
           </h1>
-          <p>Return on investment</p>
+          <p>Transactions</p>
         </div>
         <div className="child child3">
           <h1>
-            {" "}
+            ₦
             <CountUp
               isCounting={isCounting}
               onComplete={() => {
@@ -72,12 +72,12 @@ const Unleash = () => {
                   return { shouldRepeat: true, delay: 5 };
                 }
               }}
-              end={400}
+              end={1.5}
               duration={3}
             />
-            k+
+            B+
           </h1>
-          <p>Global customers</p>
+          <p>Processed</p>
         </div>
       </div>
       <img src={arrow5} alt="arrow5" className="arrow5" />

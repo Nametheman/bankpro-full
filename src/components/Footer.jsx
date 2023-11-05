@@ -16,7 +16,7 @@ const Footer = () => {
           <Socials />
         </div>
         <div className="secondSect">
-          <div className="col">
+          {/* <div className="col">
             <p className="title">Product</p>
             <a href="https://paymybills.ng/" target="_blank">
               Paymybills
@@ -42,7 +42,7 @@ const Footer = () => {
             <p>TMSaas</p>
             <p>ESMP</p>
             <p>SEAP</p>
-          </div>
+          </div> */}
           <div className="col">
             <p className="title">Company</p>
             <a to="/about">Home</a>
