@@ -176,7 +176,7 @@ const SectionWrapper = styled.section`
       .right {
         img {
           width: 90vw;
-          height: 350px;
+          height: 300px;
         }
       }
     }
