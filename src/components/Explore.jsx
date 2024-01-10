@@ -9,12 +9,8 @@ const Explore = () => {
     <Container>
       <img src={trial} alt="" />
       <div className="content">
-        <img src={discordLeft} alt="icon1" className="icon" />
-        <div className="middle">
-          <h2>Talk to us today</h2>
-          <button>Request a demo</button>
-        </div>
-        <img src={discordRight} alt="icon1" className="icon" />
+        <h2>Talk to us today</h2>
+        <button>Request a demo</button>
       </div>
     </Container>
   );
@@ -23,47 +19,74 @@ const Explore = () => {
 export default Explore;
 
 const Container = styled.div`
-  margin-top: 4rem;
   display: flex;
   justify-content: center;
   position: relative;
-
+  width: 90%;
+  margin: 4rem auto 0 auto;
   img {
-    width: 90%;
+    width: 100%;
   }
   .content {
-    width: 90%;
+    width: 100%;
     height: 100%;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 4rem;
+    padding: 0 6rem;
 
-    .icon {
-      width: 3vw;
+    h2 {
+      color: #ffffff;
+      font-family: "cabinet-grotesk-bold";
+      font-size: 1.7vw;
     }
+    button {
+      background: #ff8200;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      width: 220px;
+      height: 5vh;
+      font-size: 1rem;
+      font-family: "cabinet-grotesk-medium";
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  }
 
-    .middle {
+  @media only screen and (min-width: 0px) and (max-width: 779px) {
+    img {
+      width: 100%;
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      gap: 1rem;
+      justify-content: space-between;
+      padding: 0 2rem;
+
       h2 {
         color: #ffffff;
         font-family: "cabinet-grotesk-bold";
-        font-size: 1.7vw;
+        font-size: 0.8rem;
       }
       button {
         background: #ff8200;
         border: none;
         outline: none;
         color: #ffffff;
-        width: 220px;
-        height: 5vh;
-        margin: 0 auto;
-        font-size: 1.7vw;
+        width: unset;
+        padding: 0.3rem 1.5rem;
+        font-size: 0.8rem;
         font-family: "cabinet-grotesk-medium";
         border-radius: 30px;
         cursor: pointer;

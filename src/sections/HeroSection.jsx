@@ -63,11 +63,11 @@ const HeroSection = () => {
               Empowering Your Digital <br />
               Banking Experience.
             </h1>
-            <img
+            {/* <img
               src="./assets/images/scribble.png"
               alt=""
               className="scribble"
-            />
+            /> */}
           </motion.div>
           <motion.p variants={workVariants} className="desktopP">
             BankPro is an enterprise grade mobile-first internet/mobile banking
@@ -248,7 +248,7 @@ const ContentContainer = styled.div`
       z-index: 2;
       h1 {
         color: #fff;
-        font-size: 70px;
+        font-size: 4.38rem;
         font-family: "cabinet-grotesk-extra-bold";
         text-align: center;
       }

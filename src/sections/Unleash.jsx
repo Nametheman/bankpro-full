@@ -103,13 +103,13 @@ const Container = styled.section`
 
   h2 {
     font-family: "cabinet-grotesk-bold";
-    font-size: 4vw;
+    font-size: 1.5rem;
     margin: 1rem 0;
   }
   p {
     font-family: "cabinet-grotesk-light";
     color: ${colors.textLight};
-    font-size: 2vw;
+    font-size: 1.1rem;
   }
 
   .numbersContainer {
@@ -134,7 +134,7 @@ const Container = styled.section`
       p {
         margin-top: 0.7rem;
         font-family: "cabinet-grotesk-regular";
-        font-size: 2vw;
+        font-size: 1.3rem;
 
         color: #000;
       }
@@ -163,6 +163,29 @@ const Container = styled.section`
     .numbersContainer {
       .child {
         padding: 0.3rem 1.5rem;
+      }
+    }
+  }
+  @media only screen and (min-width: 0px) and (max-width: 500px) {
+    h2 {
+      font-family: "cabinet-grotesk-bold";
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+    p {
+      font-family: "cabinet-grotesk-light";
+      color: ${colors.textLight};
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    .numbersContainer {
+      .child {
+        p {
+          margin-top: 0.7rem;
+          font-family: "cabinet-grotesk-regular";
+          font-size: 0.8rem;
+          color: #000;
+        }
       }
     }
   }

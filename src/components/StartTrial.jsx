@@ -45,12 +45,13 @@ const Container = styled.div`
       width: 100%;
       .first {
         h2 {
-          font-size: 2.4vw;
-          font-family: "cabinet-grotesk-bold";
+          font-size: 1.3rem;
+          font-family: "cabinet-grotesk-medium";
         }
         p {
           color: #667085;
-          font-size: 1.4vw;
+          margin-top: 0.8rem;
+          font-size: 1rem;
         }
       }
       .second {
@@ -60,21 +61,20 @@ const Container = styled.div`
         .demoBtn {
           height: 44px;
           width: 12vw;
-
           border: 1px solid #c5c5c5;
           outline: none;
           background: #fff;
           font-family: "cabinet-grotesk-bold";
-          font-size: 1.5vw;
+          font-size: 1.2rem;
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 0.4rem;
+          gap: 0.8rem;
           border-radius: 10px;
           cursor: pointer;
 
           img {
-            width: 1.7vw;
+            width: 1.3rem;
           }
         }
       }
@@ -101,6 +101,33 @@ const Container = styled.div`
           .demoBtn {
             width: 18vw;
             height: 6vw;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 0px) and (max-width: 779px) {
+    .container {
+      padding: 0 1rem;
+      height: 100px;
+      .content {
+        flex-direction: row;
+        gap: 2vw;
+        .first {
+          h2 {
+            font-size: 14px;
+            font-family: "cabinet-grotesk-bold";
+          }
+          p {
+            color: #667085;
+            font-size: 12px;
+          }
+        }
+        .second {
+          .demoBtn {
+            width: 100%;
+            height: 40px;
+            padding: 0.3rem 0.4rem;
           }
         }
       }

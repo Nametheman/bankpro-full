@@ -20,6 +20,11 @@ const EmpoweringSection = () => {
         interaction and <br /> enable you to offer needed differentiation in the
         market-place.
       </p>
+      <p className="introSmall">
+        Bank Pro comes with comprehensive suite of features that enhances your
+        interaction and enable you to offer needed differentiation in the
+        market-place.
+      </p>
       <div className="mainContentContainer">
         <div className="left">
           <div className="dialog">
@@ -92,6 +97,9 @@ const SectionWrapper = styled.section`
     color: ${colors.textLight};
     font-size: 18px;
   }
+  .introSmall {
+    display: none;
+  }
   .mainContentContainer {
     margin-top: 3rem;
     display: flex;
@@ -151,6 +159,19 @@ const SectionWrapper = styled.section`
     }
   }
   @media only screen and (max-width: 460px) {
+    .titleHd {
+      font-size: 17px;
+    }
+    .intro {
+      font-size: 14px;
+      display: none;
+    }
+    .introSmall {
+      font-size: 14px;
+      display: block;
+      margin-top: 1.5rem;
+      color: ${colors.textLight};
+    }
     .mainContentContainer {
       .right {
         img {

@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 import MobileNav from "./components/MobileNa";
 import ScrollToTop from "./components/ScrollToTop";
+import Bankpro from "./components/Bankpro";
 
 function App() {
   const workVariants = {
@@ -60,6 +61,7 @@ function App() {
 
       <Features />
 
+      <Bankpro />
       <motion.div
         initial="offscreen"
         whileInView="onscreen"

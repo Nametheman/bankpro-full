@@ -68,7 +68,7 @@ const SectionWrapper = styled.section`
   }
   h2 {
     font-family: "cabinet-grotesk-extra-bold";
-    font-size: 4vw;
+    font-size: 2.5rem;
 
     span {
       font-family: "cabinet-grotesk-extra-bold";
@@ -79,7 +79,7 @@ const SectionWrapper = styled.section`
     margin-top: 1rem;
     color: ${colors.textLight};
     font-family: "cabinet-grotesk-light";
-    font-size: 2.4vw;
+    font-size: 1.5rem;
     span {
       font-family: "cabinet-grotesk-bold";
     }
@@ -88,6 +88,14 @@ const SectionWrapper = styled.section`
     .arrow3,
     .arrow4 {
       display: none;
+    }
+  }
+  @media only screen and (min-width: 0px) and (max-width: 700px) {
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.7rem;
     }
   }
 `;

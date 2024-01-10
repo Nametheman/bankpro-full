@@ -2,6 +2,8 @@
 import styled from "styled-components";
 import Socials from "./Socials";
 import logo from "../assets/icon/logo.png";
+import iosStore from "../assets/images/iosStore.svg";
+import playStore from "../assets/images/playStore.svg";
 
 const Footer = () => {
   return (
@@ -14,9 +16,20 @@ const Footer = () => {
             29A Berkley Street, Off King George <br /> Road, Onikan Lagos Lagos
           </p>
           <Socials />
+          <div
+            className="downloadSection"
+            style={{ marginTop: "1rem", display: "flex", gap: "2rem" }}
+          >
+            <a href="#">
+              <img src={iosStore} alt="ios_store_img" />
+            </a>
+            <a href="#">
+              <img src={playStore} alt="ios_store_img" />
+            </a>
+          </div>
         </div>
         <div className="secondSect">
-          {/* <div className="col">
+          <div className="col">
             <p className="title">Product</p>
             <a href="https://paymybills.ng/" target="_blank">
               Paymybills
@@ -42,7 +55,7 @@ const Footer = () => {
             <p>TMSaas</p>
             <p>ESMP</p>
             <p>SEAP</p>
-          </div> */}
+          </div>
           <div className="col">
             <p className="title">Company</p>
             <a to="/about">Home</a>
@@ -184,5 +197,8 @@ const Wrapper = styled.footer`
         font-size: 0.6rem;
       }
     }
+  }
+  @media only screen and (min-width: 511px) and (max-width: 700px) {
+    padding: 2rem;
   }
 `;
