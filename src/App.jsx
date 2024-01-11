@@ -11,6 +11,7 @@ import styled from "styled-components";
 import MobileNav from "./components/MobileNa";
 import ScrollToTop from "./components/ScrollToTop";
 import Bankpro from "./components/Bankpro";
+import Lenis from "@studio-freight/lenis";
 
 function App() {
   const workVariants = {
@@ -24,6 +25,21 @@ function App() {
       transition: { type: "spring", duration: 1, bounce: 0.3, delay: 0.4 },
     },
   };
+
+  const lenis = new Lenis({
+    duration: 2.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  });
+
+  lenis.on("scroll", (e) => {
+    console.log(e);
+  });
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 
   return (
     <Wrapper>

@@ -10,8 +10,16 @@ import { useState, useContext } from "react";
 // import state from "../state/state";
 // import { useSnapshot } from "valtio";
 import NavContext from "../state/NavContext";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection = () => {
+  const main = useRef();
+
   const workVariants = {
     offscreen: {
       delay: 2,
@@ -28,6 +36,30 @@ const HeroSection = () => {
 
   // const snap = useSnapshot(state);
   // console.log(snap.mobileNavOpened);
+
+  const mockupTriggerPoint =
+    main.current && document.getElementsByClassName("hero-description");
+
+  useGSAP(
+    () => {
+      let mockupArray = gsap.utils.toArray(".image-container");
+      mockupArray.forEach((mockup) => {
+        gsap.to(mockup, {
+          xPercent: -100 * (mockupArray.length - 1),
+          ease: "sine.out",
+          scrollTrigger: {
+            trigger: mockupTriggerPoint,
+            start: "top top",
+            end: "+=500",
+            scrub: 3,
+            snap: 1 / (mockupArray.length - 1),
+            pin: true,
+          },
+        });
+      });
+    },
+    { scope: main }
+  );
 
   const { toggleNavbar } = useContext(NavContext);
   return (
@@ -63,37 +95,65 @@ const HeroSection = () => {
               Empowering Your Digital <br />
               Banking Experience.
             </h1>
-            {/* <img
-              src="./assets/images/scribble.png"
-              alt=""
-              className="scribble"
-            /> */}
           </motion.div>
-          <motion.p variants={workVariants} className="desktopP">
-            BankPro is an enterprise grade mobile-first internet/mobile banking
-            platform <br /> that enables financial institutions to accelerate
-            time to market. It offers capabilities <br /> for omni-channel
-            experiences with highly customizable features.
-          </motion.p>
-          <motion.p variants={workVariants} className="mobileP">
-            BankPro is an enterprise grade mobile-first internet/mobile banking
-            platform that enables financial institutions to accelerate time to
-            market. It offers capabilities for omni-channel experiences with
-            highly customizable features.
-          </motion.p>
-          <motion.div variants={workVariants} className="comingSoon2">
-            <button className="demoBtn">
-              {" "}
-              <img src={playCirle} alt="" /> Demo
-            </button>
-            <button className="signUpBtn">Sign Up</button>
-          </motion.div>
-          <motion.img
-            variants={workVariants}
-            src={mockup}
-            alt=""
-            className="mockup"
-          />
+          <div className="hero-description">
+            <motion.p variants={workVariants} className="desktopP">
+              BankPro is an enterprise grade mobile-first internet/mobile
+              banking platform <br /> that enables financial institutions to
+              accelerate time to market. It offers capabilities <br /> for
+              omni-channel experiences with highly customizable features.
+            </motion.p>
+            <motion.p variants={workVariants} className="mobileP">
+              BankPro is an enterprise grade mobile-first internet/mobile
+              banking platform that enables financial institutions to accelerate
+              time to market. It offers capabilities for omni-channel
+              experiences with highly customizable features.
+            </motion.p>
+            <motion.div variants={workVariants} className="comingSoon2">
+              <button className="demoBtn">
+                {" "}
+                <img src={playCirle} alt="" /> Demo
+              </button>
+              <button className="signUpBtn">Sign Up</button>
+            </motion.div>
+          </div>
+
+          <div className="mockups-container" ref={main}>
+            <div className="image-container">
+              <motion.img
+                variants={workVariants}
+                src={mockup}
+                alt=""
+                className="mockup"
+              />
+            </div>
+
+            <div className="image-container">
+              <motion.img
+                variants={workVariants}
+                src={mockup}
+                alt=""
+                className="mockup"
+              />
+            </div>
+
+            <div className="image-container">
+              <motion.img
+                variants={workVariants}
+                src={mockup}
+                alt=""
+                className="mockup"
+              />
+            </div>
+            <div className="image-container">
+              <motion.img
+                variants={workVariants}
+                src={mockup}
+                alt=""
+                className="mockup"
+              />
+            </div>
+          </div>
         </motion.div>
       </ContentContainer>
       <motion.div
@@ -257,6 +317,7 @@ const ContentContainer = styled.div`
     .comingSoon2 {
       margin: 40px 0 40px;
       display: flex;
+      justify-content: center;
       gap: 1rem;
     }
 
@@ -298,8 +359,18 @@ const ContentContainer = styled.div`
       }
     }
 
-    .mockup {
-      width: 950px;
+    .mockups-container {
+      display: flex;
+      max-width: 100vw;
+      overflow-x: scroll;
+      .image-container {
+        min-width: 100vw;
+        display: flex;
+        justify-content: center;
+        .mockup {
+          width: 950px;
+        }
+      }
     }
   }
 
