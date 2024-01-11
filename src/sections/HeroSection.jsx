@@ -362,7 +362,10 @@ const ContentContainer = styled.div`
     .mockups-container {
       display: flex;
       max-width: 100vw;
-      overflow-x: scroll;
+      overflow-x: hidden;
+      ::-webkit-scrollbar {
+        width: 0;
+      }
       .image-container {
         min-width: 100vw;
         display: flex;
