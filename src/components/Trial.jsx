@@ -7,11 +7,16 @@ const Trial = () => {
     <Container>
       <img src={trial} alt="" />
       <div className="content">
-        <p>
+        <p className="textLarge">
           With its user-centric approach, advanced technology, and personalized{" "}
           <br />
           solutions, BankPro is transforming the digital banking experience for{" "}
           <br />
+          users worldwide.
+        </p>
+        <p className="textSmall">
+          With its user-centric approach, advanced technology, and personalized{" "}
+          solutions, BankPro is transforming the digital banking experience for{" "}
           users worldwide.
         </p>
         <button>Request a Demo</button>
@@ -43,6 +48,9 @@ const Container = styled.div`
       color: #ffffff;
       font-size: 1.3vw;
       font-family: "cabinet-grotesk-regular";
+    }
+    .textSmall {
+      display: none;
     }
     button {
       background: #ff8200;
@@ -79,6 +87,23 @@ const Container = styled.div`
       /* button {
         font-size: 15px;
       } */
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 500px) {
+    .content {
+      gap: 0.5rem;
+
+      .textLarge {
+        color: #ffffff;
+        font-size: 1.3vw;
+        font-family: "cabinet-grotesk-regular";
+        display: none;
+      }
+      .textSmall {
+        display: block;
+        font-size: 0.6rem;
+      }
     }
   }
 `;

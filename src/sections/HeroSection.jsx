@@ -451,6 +451,19 @@ const ContentContainer = styled.div`
       .mockup {
         width: 95vw;
       }
+      .mockups-container {
+        display: flex;
+        max-width: 100vw;
+        overflow-x: scroll;
+        .image-container {
+          min-width: 100vw;
+          display: flex;
+          justify-content: center;
+          .mockup {
+            width: 300px;
+          }
+        }
+      }
     }
     .arrow1 {
       display: none;
@@ -474,6 +487,20 @@ const ContentContainer = styled.div`
         font-size: 14px;
         margin-top: 1rem;
         padding: 0 1.5rem;
+      }
+
+      .mockups-container {
+        display: flex;
+        max-width: 100vw;
+        overflow-x: scroll;
+        .image-container {
+          min-width: 100vw;
+          display: flex;
+          justify-content: center;
+          .mockup {
+            width: 250px;
+          }
+        }
       }
     }
   }
