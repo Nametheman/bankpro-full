@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import landing from "../assets/images/landing.png";
 import mockup from "../assets/images/mock.png";
+import mockup2 from "../assets/images/mock2.png";
+import mockup3 from "../assets/images/mock3.png";
+import mockup4 from "../assets/images/mock4.png";
 import playCirle from "../assets/icon/play-circle.png";
 import scribble from "../assets/images/scribble.png";
 import arrow1 from "../assets/images/arrow1.png";
@@ -49,7 +52,7 @@ const HeroSection = () => {
           ease: "sine.out",
           scrollTrigger: {
             trigger: mockupTriggerPoint,
-            start: "300 top",
+            start: "200 top",
             end: "+=400",
             scrub: 1,
             snap: {
@@ -136,7 +139,7 @@ const HeroSection = () => {
             <div className="image-container">
               <motion.img
                 variants={workVariants}
-                src={mockup}
+                src={mockup2}
                 alt=""
                 className="mockup"
               />
@@ -145,7 +148,7 @@ const HeroSection = () => {
             <div className="image-container">
               <motion.img
                 variants={workVariants}
-                src={mockup}
+                src={mockup3}
                 alt=""
                 className="mockup"
               />
@@ -153,7 +156,7 @@ const HeroSection = () => {
             <div className="image-container">
               <motion.img
                 variants={workVariants}
-                src={mockup}
+                src={mockup4}
                 alt=""
                 className="mockup"
               />
@@ -377,7 +380,7 @@ const ContentContainer = styled.div`
         display: flex;
         justify-content: center;
         .mockup {
-          width: 950px;
+          width: 850px;
         }
       }
     }
