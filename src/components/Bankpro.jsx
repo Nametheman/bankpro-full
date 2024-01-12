@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import arrow from "../assets/images/last_arrow.svg";
-import phone_mock from "../assets/images/phone_mock.svg";
+import phone_mock from "../assets/images/phone_mock.png";
 import corporate_mock from "../assets/images/corporate_mock.png";
 import iosStore from "../assets/images/iosStore.svg";
 import playStore from "../assets/images/playStore.svg";
